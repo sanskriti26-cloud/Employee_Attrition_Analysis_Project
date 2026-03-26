@@ -9,4 +9,6 @@
 3. Find high risk employee segment
 
 **Data Understanding**
+--> The dataset in the project is a sample dataset created by data scientists of IBM for learning purposes.
+--> The key factors to be considered include:
 
