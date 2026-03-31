@@ -33,7 +33,7 @@ The main analysis and inisghts:
 Attrition rate is high. So, HR managers need to focus on employee retention.
 
 ### Key Attrition Drivers
-Patterns seen among employees who left the comppany include lower monthly income, higher overtime working employees, higher business travel frequency, certain job roles like "Sales Representative" and "Laboratory Technician", younger workforce and lower satisfaction with workplace.
+Patterns seen among employees who left the comppany include lower monthly income, higher overtime working employees, higher business travel frequency, certain job roles like "Sales Representative", "Laboratory Technician" and "Human Resources", younger workforce and lower satisfaction with workplace.
 
 ### Financial Cost
 Calculated rough financial cost of attrition considering it is 50% of annual salary per employee.
@@ -43,12 +43,12 @@ Calculated rough financial cost of attrition considering it is 50% of annual sal
 - Higher attrition rate is seen in certain job roles
 
 ## Conclusion
-The analysis identified key drivers of attrition: low income, high travel frequency, low workplace satisfaction and early stage of career.
+The analysis identified key drivers of attrition: low income, overtime, high travel frequency, certain job roles, low workplace satisfaction and early stage of career.
 
 ## Recommendations
 Based on insights from the analysis, I recommend the following action plan to HR:
 - Consider increasing salary and other monatory benefits of low paid employees
-- Focus on employee engagement in "Sales Representative" and "Laboratory Technician" roles.
+- Focus on employee engagement in "Sales Representative", "Laboratory Technician" and "Human Resources" roles.
 - Focus on career growth programs among employees in their early stage of career.
 
 ## Limitations 
