@@ -43,7 +43,7 @@ Calculated rough financial cost of attrition considering it is 50% of annual sal
 - Higher attrition rate is seen in certain job roles
 
 - Summarized the insights into this dashboard:
-
+<img width="893" height="496" alt="Insights_Dashboard" src="https://github.com/user-attachments/assets/11a48abd-226e-40ca-b7ef-e18b10d7bd52" />
 
 ## Recommendations
 Based on insights from the analysis, I recommend the following action plan to HR:
