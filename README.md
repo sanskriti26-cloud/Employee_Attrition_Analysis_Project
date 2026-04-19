@@ -42,14 +42,17 @@ Calculated rough financial cost of attrition considering it is 50% of annual sal
 - Low salary, high travel frequency and overtime significantly drive attrition
 - Higher attrition rate is seen in certain job roles
 
-## Conclusion
-The analysis identified key drivers of attrition: low income, overtime, high travel frequency, certain job roles, low workplace satisfaction and early stage of career.
+- Summarized the insights into this dashboard:
+
 
 ## Recommendations
 Based on insights from the analysis, I recommend the following action plan to HR:
 - Consider increasing salary and other monatory benefits of low paid employees
 - Focus on employee engagement in "Sales Representative", "Laboratory Technician" and "Human Resources" roles.
 - Focus on career growth programs among employees in their early stage of career.
+
+## Conclusion
+The analysis identified key drivers of attrition: low income, overtime, high travel frequency, certain job roles, low workplace satisfaction and early stage of career.
 
 ## Limitations 
 The limitations of the study include:
