@@ -58,12 +58,12 @@ Calculated rough financial cost of attrition considering it is 50% of annual sal
 - Attrition rate among employees in the age group 18-25 is about 2.5 times higher than that in employee above 25 years of age. 
 - Employees whose earnings fall into lw salary slab range show higher attrition
 - Employees working overtime have significantly higher attrition rates
-- The insights are summarized in the dashboard below:
+
+## Dashboard Preview
+The dashboard summarizes key attrition trends across departments, salary levels, and employee demographics.
 <img width="893" height="496" alt="Insights_Dashboard" src="https://github.com/user-attachments/assets/11a48abd-226e-40ca-b7ef-e18b10d7bd52" />
 
-The dashboard summarizes key attrition trends across departments, salary levels, and employee demographics.
-
-Key highlights:
+### Key highlights:
 - Attrition by job role
 - Attrition by salary
 - Attrition among younger employees
