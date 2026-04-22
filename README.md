@@ -9,9 +9,9 @@
 3. Provide actionable insights for improving employee retention
 
 ## Data Understanding
-- The dataset in the project is a sample dataset created by data scientists of IBM for learning purposes.
+- The dataset in the project is a sample dataset created by IBM data scientists for learning purposes.
 - It contains employee-related information such as age, income and job role.
-- The key attributes to be analyzed include:
+- The key attributes analyzed include:
 1. MonthlyIncome
 2. BusinessTravel
 3. OverTime
