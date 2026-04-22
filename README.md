@@ -48,10 +48,10 @@ Patterns seen among employees who left the comppany include lower monthly income
 Calculated rough financial cost of attrition considering it is 50% of annual salary per employee.
 
 ## Insights
-- Employees earning below X salary range show ~Y% higher attrition
+- Sales Representatives, Laboratory Technicians, and Human Resources show the highest turnover
+- Attrition rate among employees in the age group 18-25 is about 2.5 times higher than that in employee above 25 years of age. 
+- Employees whose earnings fall into lw salary slab range show higher attrition
 - Employees working overtime have significantly higher attrition rates
-- Sales Representatives and Laboratory Technicians show the highest turnover
-- Younger employees (age group X–Y) are more likely to leave 
 - The insights are summarized in the dashboard below  
 <img width="893" height="496" alt="Insights_Dashboard" src="https://github.com/user-attachments/assets/11a48abd-226e-40ca-b7ef-e18b10d7bd52" />
 
