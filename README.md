@@ -1,3 +1,13 @@
+## Employee Attrition Analysis
+
+This project analyzes employee attrition using HR data to identify key factors driving employee turnover. 
+Using exploratory data analysis and visualization, the project uncovers patterns related to salary, overtime, job roles, and work-life balance, and provides actionable HR recommendations.
+
+## Tools Used:
+- Microsoft Excel
+- SQL
+- Power BI
+
 ## Problem Statement
 1. What are the ke factors causing of attrition?
 3. Whta are main drivers/factors of attrition?
