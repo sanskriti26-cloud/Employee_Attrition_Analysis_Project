@@ -48,16 +48,19 @@ Patterns seen among employees who left the comppany include lower monthly income
 Calculated rough financial cost of attrition considering it is 50% of annual salary per employee.
 
 ## Insights
-- Low salary, high travel frequency, and overtime significantly contribute to employee attrition  
-- Higher attrition rates are observed in certain job roles  
+- Employees earning below X salary range show ~Y% higher attrition
+- Employees working overtime have significantly higher attrition rates
+- Sales Representatives and Laboratory Technicians show the highest turnover
+- Younger employees (age group X–Y) are more likely to leave 
 - The insights are summarized in the dashboard below  
 <img width="893" height="496" alt="Insights_Dashboard" src="https://github.com/user-attachments/assets/11a48abd-226e-40ca-b7ef-e18b10d7bd52" />
 
 ## Recommendations
 Based on the analysis, the following actions are recommended:
-- Introduce salary increments and additional benefits for low-income employees  
-- Improve employee engagement in high-attrition roles such as Sales Representative, Laboratory Technician, and Human Resources  
-- Implement career development programs for employees in the early stages of their careers  
+- Introduce retention bonuses or salary restructuring for low-income employees
+- Reduce overtime workload or introduce shift balancing policies
+- Design targeted retention strategies for high-risk roles (Sales Representative, HR, Laboratory Technician)
+- Implement early-career mentorship programs to retain younger employees  
 
 ## Limitations 
 The limitations of this study include:
