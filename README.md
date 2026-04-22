@@ -26,7 +26,7 @@
 3. Checking for null values (no null values found)
 
 ## Exploratory Data Analysis
-The main analysis and inisghts:
+The following analysis was conducted to identify patterns and trends in employee attrition:
 
 ### Attrition Distribution
 Attrition rate is high. So, HR managers need to focus on employee retention.
