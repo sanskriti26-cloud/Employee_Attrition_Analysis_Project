@@ -20,7 +20,7 @@
 6. Age
 
 ## Data Cleaning
-- The dataset was cleaned and prepared for analysis. The cleaning process included:
+The dataset was cleaned and prepared for analysis. The cleaning process included:
 1. Removing irrelevant data
 2. Checking for duplicate values
 3. Checking for null values (no null values found)
@@ -44,14 +44,16 @@ Calculated rough financial cost of attrition considering it is 50% of annual sal
 <img width="893" height="496" alt="Insights_Dashboard" src="https://github.com/user-attachments/assets/11a48abd-226e-40ca-b7ef-e18b10d7bd52" />
 
 ## Recommendations
-Based on insights from the analysis, I recommend the following action plan to HR:
-- Consider increasing salary and other monatory benefits of low paid employees
-- Focus on employee engagement in "Sales Representative", "Laboratory Technician" and "Human Resources" roles.
-- Focus on career growth programs among employees in their early stage of career.
+Based on the analysis, the following actions are recommended:
+- Introduce salary increments and additional benefits for low-income employees  
+- Improve employee engagement in high-attrition roles such as Sales Representative, Laboratory Technician, and Human Resources  
+- Implement career development programs for employees in the early stages of their careers  
 
 ## Limitations 
-The limitations of the study include:
-- Lack of required information to calculate financal cost of attrition more accurately
+The limitations of this study include:
+- The dataset is a sample dataset and may not fully represent real-world scenarios  
+- Limited features restrict deeper analysis of certain factors  
+- Lack of real-time data prevents dynamic analysis  
 
 ## Conclusion
-The analysis identified key drivers of attrition: low income, overtime, high travel frequency, certain job roles, low workplace satisfaction and early stage of career.
+The analysis identified key drivers of attrition: low income, overtime, high travel frequency, certain job roles, low workplace satisfaction and early stage of career. Addressing these factors can help organizations improve employee retention.
