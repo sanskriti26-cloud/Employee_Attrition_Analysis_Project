@@ -1,13 +1,12 @@
 ## Problem Statement
-1. What are the causes of attrition?
-2. Whta are key drivers/factors of attrition?
-3. What HR stratesies can be implemented to reduce attrition rate?
+1. What are the ke factors causing of attrition?
+3. Whta are main drivers/factors of attrition?
+4. What HR stratesies can be implemented to reduce attrition rate?
 
 ## Objectives
-1. Identify factors driving attrition
+1. Identify key factors driving attrition
 2. Analyse contribution of relevant factors like income, overtime, travel frequency, etc.
-3. Find high risk employee segment
-4. Provide actionable insights for improving employee retention
+3. Provide actionable insights for improving employee retention
 
 ## Data Understanding
 - The dataset in the project is a sample dataset created by data scientists of IBM for learning purposes.
