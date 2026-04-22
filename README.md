@@ -20,10 +20,10 @@
 6. Age
 
 ## Data Cleaning
-- The dataset was cleaned and prepared for analysis. The cleaning includes:
-1. Removing of irrelevant data
+- The dataset was cleaned and prepared for analysis. The cleaning process included:
+1. Removing irrelevant data
 2. Checking for duplicate values
-3. Checking for null values
+3. Checking for null values (no null values found)
 
 ## Exploratory Data Analysis
 The main analysis and inisghts:
