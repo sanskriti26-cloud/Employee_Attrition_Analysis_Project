@@ -38,10 +38,9 @@ Patterns seen among employees who left the comppany include lower monthly income
 Calculated rough financial cost of attrition considering it is 50% of annual salary per employee.
 
 ## Insights
-- Low salary, high travel frequency and overtime significantly drive attrition
-- Higher attrition rate is seen in certain job roles
-
-- Summarized the insights into this dashboard:
+- Low salary, high travel frequency, and overtime significantly contribute to employee attrition  
+- Higher attrition rates are observed in certain job roles  
+- The insights are summarized in the dashboard below  
 <img width="893" height="496" alt="Insights_Dashboard" src="https://github.com/user-attachments/assets/11a48abd-226e-40ca-b7ef-e18b10d7bd52" />
 
 ## Recommendations
