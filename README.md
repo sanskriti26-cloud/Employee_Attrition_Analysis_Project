@@ -51,9 +51,9 @@ Based on insights from the analysis, I recommend the following action plan to HR
 - Focus on employee engagement in "Sales Representative", "Laboratory Technician" and "Human Resources" roles.
 - Focus on career growth programs among employees in their early stage of career.
 
-## Conclusion
-The analysis identified key drivers of attrition: low income, overtime, high travel frequency, certain job roles, low workplace satisfaction and early stage of career.
-
 ## Limitations 
 The limitations of the study include:
 - Lack of required information to calculate financal cost of attrition more accurately
+
+## Conclusion
+The analysis identified key drivers of attrition: low income, overtime, high travel frequency, certain job roles, low workplace satisfaction and early stage of career.
