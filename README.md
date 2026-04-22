@@ -1,7 +1,7 @@
 ## Problem Statement
 1. What are the causes of attrition?
-2. Whta are key drivers/factors?
-3. What HR stratesies should be implemented to reduce attrition rate?
+2. Whta are key drivers/factors of attrition?
+3. What HR stratesies can be implemented to reduce attrition rate?
 
 ## Objectives
 1. Identify factors driving attrition
