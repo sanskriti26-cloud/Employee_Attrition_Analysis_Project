@@ -15,14 +15,14 @@ Using exploratory data analysis and visualization, the project uncovers patterns
 ├── README.md     # Project documentation  
 
 ## Problem Statement
-1. What are the ke factors causing of attrition?
-3. Whta are main drivers/factors of attrition?
-4. What HR stratesies can be implemented to reduce attrition rate?
+1. What are the key factors causing attrition?
+3. What are main drivers/factors of attrition?
+4. What HR strategies can be implemented to reduce attrition rate?
 
 ## Objectives
-1. Identify key factors driving attrition
-2. Analyse contribution of relevant factors like income, overtime, travel frequency, etc.
-3. Provide actionable insights for improving employee retention
+1. to identify key factors driving attrition
+2. to analyse contribution of relevant factors like income, overtime, travel frequency, etc.
+3. to provide actionable insights for improving employee retention
 
 ## Data Understanding
 - The dataset in the project is a sample dataset created by IBM data scientists for learning purposes.
@@ -48,16 +48,16 @@ The following analysis was conducted to identify patterns and trends in employee
 Attrition rate is high. So, HR managers need to focus on employee retention.
 
 ### Key Attrition Drivers
-Patterns seen among employees who left the comppany include lower monthly income, higher overtime working employees, higher business travel frequency, certain job roles like "Sales Representative", "Laboratory Technician" and "Human Resources", younger workforce and lower satisfaction with workplace.
+Patterns seen among employees who left the company include lower monthly income, higher overtime working employees, higher business travel frequency, certain job roles like "Sales Representative", "Laboratory Technician" and "Human Resources", younger workforce and lower satisfaction with workplace.
 
 ### Financial Cost
 Calculated rough financial cost of attrition considering it is 50% of annual salary per employee.
 
 ## Insights
-- Sales Representatives, Laboratory Technicians, and Human Resources show the highest turnover
+- Sales Representatives, Laboratory Technicians, and Human Resources show the highest turnover.
 - Attrition rate among employees in the age group 18-25 is about 2.5 times higher than that in employee above 25 years of age. 
-- Employees whose earnings fall into lw salary slab range show higher attrition
-- Employees working overtime have significantly higher attrition rates
+- Employees whose earnings fall into low salary slab range show higher attrition.
+- Employees working overtime have significantly higher attrition rates.
 
 ## Dashboard Preview
 The dashboard summarizes key attrition trends across departments, salary levels, and employee demographics.
