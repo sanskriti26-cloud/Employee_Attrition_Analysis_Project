@@ -19,17 +19,19 @@ Using exploratory data analysis and visualization, the project uncovers patterns
 The organization wants to find out why their attrition rates are high for this specific time period, and what the HR team can do to reduce it.
 
 ## Business questions answered in this project
-1. What are the key factors causing attrition?
-3. What are main drivers/factors of attrition?
-4. What HR strategies can be implemented to reduce attrition rate?
+1. What are the key factors associated with attrition?
+2. What are the key factors causing attrition?
+3. What HR strategies can be implemented to reduce attrition rate?
 
 ## Objectives
+The main objectives of this project include:
 1. to identify key factors driving attrition
 2. to analyse contribution of relevant factors like income, overtime, travel frequency, etc.
 3. to provide actionable insights for improving employee retention
 
 ## Data Understanding
 - The dataset in the project is a sample dataset created by IBM data scientists for learning purposes.
+- Data Source: "IMB HR Attrition Analysis" dataset on Kaggle
 - It contains employee-related information such as age, income and job role.
 - The key attributes analyzed include:
 1. MonthlyIncome
