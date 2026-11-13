@@ -4,7 +4,6 @@ This project analyzes employee attrition using HR data to identify key factors d
 Using exploratory data analysis and visualization, the project uncovers patterns related to salary, overtime, job roles, and work-life balance, and provides actionable HR recommendations.
 
 ## Tools Used:
-- Microsoft Excel (data cleaning)
 - SQL (data querying)
 - Power BI (data visualization)
 
