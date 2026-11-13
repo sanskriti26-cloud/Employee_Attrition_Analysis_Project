@@ -50,7 +50,7 @@ The following analysis was conducted to identify patterns and trends in employee
 Attrition rate is high. So, HR managers need to focus on employee retention.
 
 ### Key Attrition Drivers
-High association patterns were seen among employees who left the company include lower monthly income, higher overtime working employees, higher business travel frequency, certain job roles like "Sales Representative", "Laboratory Technician" and "Human Resources", younger workforce and lower satisfaction with workplace.
+These trends were often found among the employees who left the company: lower monthly income, higher overtime working employees, higher business travel frequency, certain job roles like "Sales Representative", "Laboratory Technician" and "Human Resources", younger workforce and lower satisfaction with workplace.
 
 ### Financial Cost
 Calculated rough financial cost of attrition considering it is 50% of annual salary per employee.
