@@ -7,7 +7,7 @@ Using exploratory data analysis and visualization, the project uncovers patterns
 - SQL (data querying)
 - Power BI (data visualization)
 
-## ## Project Structure
+## Project Structure
 ├── README.md (Project overview)
 ├── data (Original dataset)  
 ├── sql (SQL queries for data analysis)  
