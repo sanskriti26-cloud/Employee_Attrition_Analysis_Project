@@ -50,10 +50,7 @@ The following analysis was conducted to identify patterns and trends in employee
 Attrition rate is high. So, HR managers need to focus on employee retention.
 
 ### Key Attrition Drivers
-These trends were often found among the employees who left the company: lower monthly income, higher overtime working employees, higher business travel frequency, certain job roles like "Sales Representative", "Laboratory Technician" and "Human Resources", younger workforce and lower satisfaction with workplace.
-
-### Financial Cost
-Calculated rough financial cost of attrition considering it is 50% of annual salary per employee.
+These trends that were often found among the employees who left the company includes lower monthly income, higher overtime working employees, higher business travel frequency, certain job roles like "Sales Representative", "Laboratory Technician" and "Human Resources", younger workforce and lower satisfaction with workplace.
 
 ## Insights
 - Sales Representatives, Laboratory Technicians, and Human Resources show the highest turnover.
@@ -73,7 +70,7 @@ The dashboard summarizes key attrition trends across departments, salary levels,
 - Overtime impact
 
 ## Recommendations
-Based on the analysis, the following actions are recommended:
+Based on the analysis, I recommend the following actions:
 - Introduce retention bonuses or salary restructuring for low-income employees
 - Reduce overtime workload or introduce shift balancing policies
 - Design targeted retention strategies for high-risk roles (Sales Representative, HR, Laboratory Technician)
@@ -81,6 +78,7 @@ Based on the analysis, the following actions are recommended:
 
 ## Limitations 
 The limitations of this study include:
+- The dataset was already cleaned, which doesn't account for the messiness of the real world datasets.
 - The dataset is a sample dataset and may not fully represent real-world scenarios  
 - Limited features restrict deeper analysis of certain factors  
 - Lack of real-time data prevents dynamic analysis  
