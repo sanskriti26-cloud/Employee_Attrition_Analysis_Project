@@ -16,6 +16,9 @@ Using exploratory data analysis and visualization, the project uncovers patterns
  
 
 ## Problem Statement
+The organization wants to find out why their attrition rates are high for this specific time period, and what the HR team can do to reduce it.
+
+## Business questions answered in this project
 1. What are the key factors causing attrition?
 3. What are main drivers/factors of attrition?
 4. What HR strategies can be implemented to reduce attrition rate?
