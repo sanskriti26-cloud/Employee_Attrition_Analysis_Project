@@ -9,7 +9,7 @@ Using exploratory data analysis and visualization, the project uncovers patterns
 
 ## Project Structure
 ├── README.md (Project overview) 
-├── data (Original dataset)  
+ ├── data (Original dataset)  
 ├── sql (SQL queries for data analysis)  
 ├── dashboard (Dashboard summarizing key findings)  
 ├── Report (Project report)
