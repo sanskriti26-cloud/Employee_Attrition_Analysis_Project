@@ -41,10 +41,7 @@ The main objectives of this project include:
 6. Age
 
 ## Data Cleaning
-The dataset was cleaned and prepared for analysis. The cleaning process included:
-1. Removing irrelevant data
-2. Checking for duplicate values
-3. Checking for null values (no null values found)
+The dataset was checked for missing data, duplicate data and overall fit for analysis. I found out that the dataset was already cleaned. 
 
 ## Exploratory Data Analysis
 The following analysis was conducted to identify patterns and trends in employee attrition:
