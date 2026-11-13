@@ -8,10 +8,12 @@ Using exploratory data analysis and visualization, the project uncovers patterns
 - Power BI (data visualization)
 
 ## ## Project Structure
-├── data/         # Original dataset  
-├── sql/          # SQL queries for data analysis  
-├── dashboard/    # Dashboard summarizing key findings  
-├── README.md     # Project documentation  
+├── README.md (Project overview)
+├── data (Original dataset)  
+├── sql (SQL queries for data analysis)  
+├── dashboard (Dashboard summarizing key findings)  
+├── Report (Project report)
+ 
 
 ## Problem Statement
 1. What are the key factors causing attrition?
