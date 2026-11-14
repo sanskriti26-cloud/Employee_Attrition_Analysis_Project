@@ -3,10 +3,6 @@
 This project analyzes employee attrition using HR data to identify key factors driving employee turnover. 
 Using exploratory data analysis and visualization, the project uncovers patterns related to salary, overtime, job roles, and work-life balance, and provides actionable HR recommendations.
 
-## Tools Used:
-- SQL (data querying)
-- Power BI (data visualization)
-
 ## Project Structure
 ├── data (Original dataset)  
 ├── sql (SQL queries for data analysis)  
@@ -26,11 +22,17 @@ The organization wants to find out why their attrition rates are high for this s
 The main objectives of this project include:
 1. to identify key factors driving attrition
 2. to analyse contribution of relevant factors like income, overtime, travel frequency, etc.
-3. to provide actionable insights for improving employee retention
+3. to provide actionable insights and recommendations to HR for improving employee retention
+
+## Data Source
+- The dataset in the project is a sample dataset created by IBM data scientists for learning purposes.
+- Data Source: "IMB HR Analytics Employee Attrition & Performance" dataset on Kaggle
+
+## Tools Used:
+- SQL (data querying)
+- Power BI (data visualization)
 
 ## Data Understanding
-- The dataset in the project is a sample dataset created by IBM data scientists for learning purposes.
-- Data Source: "IMB HR Attrition Analysis" dataset on Kaggle
 - It contains employee-related information such as age, income and job role.
 - The key attributes analyzed include:
 1. MonthlyIncome
