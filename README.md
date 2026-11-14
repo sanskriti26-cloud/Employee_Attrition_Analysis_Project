@@ -64,6 +64,7 @@ These trends that were often found among the employees who left the company incl
 The dashboard summarizes key attrition trends across departments, salary levels, and employee demographics.
 
 <img width="893" height="496" alt="Insights_Dashboard" src="https://github.com/user-attachments/assets/11a48abd-226e-40ca-b7ef-e18b10d7bd52" />
+
 dashboard/Employee Attrition Analysis Dashbaord.png
 
 ### Key highlights:
