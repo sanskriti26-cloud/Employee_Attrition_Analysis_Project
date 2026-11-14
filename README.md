@@ -20,8 +20,8 @@ The organization wants to find out why their attrition rates are high for this s
 
 ## Objectives
 The main objectives of this project include:
-1. to identify key factors driving attrition
-2. to analyse contribution of relevant factors like income, overtime, travel frequency, etc.
+1. to identify potential causes of attrition
+2. to create interactive dashboards summarizing key findings
 3. to provide actionable insights and recommendations to HR for improving employee retention
 
 ## Data Source
