@@ -84,7 +84,7 @@ FROM [IBM Employee Attrition Analysis]
 GROUP BY Department
 ORDER BY OvertimeEmployeePercentage DESC;
 
--- Insight: Percentage of employees working overtime is similar in each department
+-- Insight: Percentage of employees working overtime is similar in each department.
 ---------------------------------------------------------------------------------------------------------------------------------
 
 -- Job roles and departments
