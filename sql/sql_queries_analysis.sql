@@ -1,9 +1,11 @@
--- DATASET EXPLORATION & UNDERSTANDING
+-- ==================================================================================================
+-- 01. DATASET EXPLORATION & UNDERSTANDING
+-- ==================================================================================================
+
 -- Total number of employees
 SELECT
     COUNT(*) AS TotalEmployees
 FROM [IBM Employee Attrition Analysis];
---------------------------------------------------------------------------------------------------------------------------------
 
 -- Number of employees left
 SELECT 
@@ -12,7 +14,6 @@ SELECT
          ELSE 0 
         END) AS EmployeesLeft 
 FROM [IBM Employee Attrition Analysis];
-------------------------------------------------------------------------------------------------------------------------------------
 
 -- Rate of attrition
 SELECT 
@@ -21,7 +22,6 @@ SELECT
          ELSE 0 
         END)*100.0/COUNT(*) AS AttritionRate 
 FROM [IBM Employee Attrition Analysis];
--------------------------------------------------------------------------------------------------------------------------------
 
 -- The 5 number summary of workforce age
 SELECT DISTINCT
@@ -35,7 +35,6 @@ SELECT DISTINCT
     
     PERCENTILE_CONT(0.75) WITHIN GROUP (ORDER BY Age) 
         OVER () AS Q3_Age,
-    ----------------------------------------------------------------------------------------------------------------------
    
    -- The 5 number summary of monthly income of employees
     MAX(Age) OVER () AS Max_Age
@@ -55,14 +54,12 @@ SELECT DISTINCT
     
     MAX(MonthlyIncome) OVER () AS Max_Income
 FROM [IBM Employee Attrition Analysis];
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 -- Percent of employees whose income is lower than average
 SELECT 
     100.0*COUNT(*)/(SELECT COUNT(*) FROM [IBM Employee Attrition Analysis]) AS EmployeePercent
 FROM [IBM Employee Attrition Analysis]
 WHERE MonthlyIncome < (SELECT AVG(MonthlyIncome) FROM [IBM Employee Attrition Analysis]);
----------------------------------------------------------------------------------------------------------------------------
 
 -- Percentage of overtime
 SELECT 
@@ -85,7 +82,6 @@ GROUP BY Department
 ORDER BY OvertimeEmployeePercentage DESC;
 
 -- Insight: Percentage of employees working overtime is similar in each department.
----------------------------------------------------------------------------------------------------------------------------------
 
 -- Job roles and departments
 SELECT 
@@ -95,7 +91,6 @@ SELECT
 FROM [IBM Employee Attrition Analysis]
 Group By Department, JobRole
 ORDER BY Department, JobRole;
------------------------------------------------------------------------------------------------------------------------------------
 
 -- Business travel frequency proportion
 SELECT 
@@ -105,9 +100,10 @@ SELECT
 FROM [IBM Employee Attrition Analysis]
 Group By BusinessTravel
 ORDER BY EmployeePercent DESC;
---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
----> ANALYSIS & FINDINGS
+-- ===================================================================================================
+-- 02. ANALYSIS & FINDINGS
+-- ===================================================================================================
 
 -- Average income of employees who left vs stayed
 SELECT 
@@ -117,7 +113,6 @@ FROM [IBM Employee Attrition Analysis]
 GROUP BY Attrition;
 
 -- Insight: Income of employees who didn't leave is about 1.4 times higher that income of employees who left.
------------------------------------------------------------------------------------------------------------------------------------
 
 --Average income across job roles
 SELECT 
@@ -128,7 +123,6 @@ FROM [IBM Employee Attrition Analysis]
 Group By Department, JobRole
 ORDER BY Department, JobRole;
 -- Insight: Income of job roles in sales is lower
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 --How does attrition rate vary by gender?
 SELECT 
@@ -140,7 +134,6 @@ FROM [IBM Employee Attrition Analysis]
 GROUP BY Gender;
 
 --Interpretation: Attrition rate of male employees is only slightly higher.
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 -- Attrition rate by department
 SELECT 
@@ -159,7 +152,6 @@ GROUP BY Department
 ORDER BY AttritionRate DESC;
 
 -- Insight: Sales and Human Resources department has higher attrition rate
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 -- Attrition rate by age group
 SELECT 
@@ -188,7 +180,6 @@ GROUP BY
 ORDER BY AttritionRate DESC;
 
 -- Insight: Attrition rate in the age group 18-25 is significantly higher
------------------------------------------------------------------------------------------------------------------------------------
 
 -- Attrition rate in age group of 18-25 vs others
 SELECT 
@@ -216,7 +207,6 @@ GROUP BY
      END;
 
 -- Insight: Attrition rate among employees in the age group 18-25 is about 2.5 times higher than that in employee above 25 years of age. attrition rate
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 -- Attrition rate by income?
 SELECT 
@@ -250,7 +240,6 @@ GROUP BY
     ORDER BY AttritionRate DESC;
 
 -- Insight: Attrition rate in employees under low income slab is significantly higher.
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 -- Attrition rate by stock option level
 SELECT 
@@ -269,7 +258,6 @@ GROUP BY StockOptionLevel
 ORDER BY AttritionRate DESC;
 
 --Interpretation: It's the employees with 0 stock otion level that left the most
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 -- Attrition rate by salary hike percentage
 SELECT 
@@ -303,7 +291,6 @@ GROUP BY
 ORDER BY AttritionRate DESC;
 
 --Interpretation: similar trend
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 -- Attrition rate vary by overtime
 SELECT 
@@ -322,7 +309,6 @@ GROUP BY OverTime
 ORDER BY AttritionRate DESC;
 
 -- Insight: Attrition rate among employees working overtime is 3 times higher than that among employees not working overtime.
-------------------------------------------------------------------------------------------------------------------------------
 
 --How does attrition rate vary by frequency of business travel?
 SELECT 
@@ -339,7 +325,6 @@ SELECT
 FROM [IBM Employee Attrition Analysis]
 GROUP BY BusinessTravel
 ORDER BY AttritionRate DESC;
-----------------------------------------------------------------------------------------------------------------------------
 
 -- Attrition rate by job role
 SELECT 
@@ -356,7 +341,6 @@ SELECT
 FROM [IBM Employee Attrition Analysis]
 GROUP BY JobRole
 ORDER BY AttritionRate DESC;
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 -- Attrition rate by job satsfaction
 SELECT 
@@ -375,7 +359,6 @@ GROUP BY JobSatisfaction
 ORDER BY AttritionRate DESC;
 
 --Interpretation: Attrition rate increases as job satisfaction decreases
----------------------------------------------------------------------------------------------------------------------------------
 
 -- Department which has greater percentage of less satsfied employees
 SELECT 
@@ -393,7 +376,6 @@ GROUP BY Department
 ORDER BY AttritionEmployee DESC
 
 -- Insight: Job satisfaction is lowest in HR department, which correlates with high attrition in the department
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 -- Attrition rate by work-life balance
 SELECT 
@@ -412,7 +394,6 @@ GROUP BY WorkLifeBalance
 ORDER BY AttritionRate DESC;
 
 --Interpretation: Employees who rated work-life balance as 1 left the most. Strangely, the category that follows is of the ones who rated work-life balance as 4.
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 -- Attrition rate by relationship satsfaction
 SELECT 
@@ -431,7 +412,6 @@ GROUP BY RelationshipSatisfaction
 ORDER BY AttritionRate DESC;
 
 --Interpretation: Employees least satisfied with relationships within organization left the most
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 -- Attrition rate by environment satisfaction
 SELECT 
@@ -450,7 +430,6 @@ GROUP BY EnvironmentSatisfaction
 ORDER BY AttritionRate DESC;
 
 --Interpretation: Attrition rate increases as environment satisfaction decreases
-------------------------------------------------------------------------------------------------------------------------------------
 
 -- Attrition rate by job level
 SELECT 
@@ -469,7 +448,6 @@ GROUP BY JobLevel
 ORDER BY AttritionRate DESC;
 
 --Interpretation: Attrition rate increases as job level decreases, employees at higher job level tend to be more stable
------------------------------------------------------------------------------------------------------------------------------------
 
 -- Attrition rate by job involvement
 SELECT 
@@ -488,7 +466,6 @@ GROUP BY JobInvolvement
 ORDER BY AttritionRate DESC;
 
 --Interpretation: Attrition rate increases as job involvement decreases
---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 -- Attrition rate by number of trainings last year
 SELECT 
@@ -507,7 +484,6 @@ GROUP BY TrainingTimesLastYear
 ORDER BY AttritionRate DESC;
 
 --Interpretation: Employees with 0 and 4 times (maximun) training left the most
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 -- Attrition rate by years with current manager
 SELECT 
@@ -526,7 +502,6 @@ GROUP BY YearsWithCurrManager
 ORDER BY AttritionRate DESC;
 
 --Interpretation:
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 -- Attrition by years at the company
 SELECT 
@@ -545,7 +520,6 @@ GROUP BY YearsAtCompany
 ORDER BY AttritionRate DESC;
 
 --Interpretation: No consistent pattern is seen
--------------------------------------------------------------------------------------------------------------------------
 
 -- Attrition rate by total working years
 SELECT 
@@ -574,7 +548,6 @@ END
 ORDER BY AttritionRate DESC;
 
 --Interpretation: Employees with total working years between 0 and 10 is seen to have higher attrition rate than others. These are employees still in there early career phase.
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 -- Income of employees working overtime vs of employees not working overtime
 SELECT 
@@ -589,4 +562,3 @@ FROM [IBM Employee Attrition Analysis]
 GROUP BY Department;
 
 -- Insight: Income of overtime employees is almost same as employees not working overtime in sales and R&D departments, while in HR, it's higher
---------------------------------------------------------------------------------------------------------------------------------
