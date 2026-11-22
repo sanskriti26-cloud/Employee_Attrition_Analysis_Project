@@ -36,7 +36,7 @@ SELECT DISTINCT
     PERCENTILE_CONT(0.75) WITHIN GROUP (ORDER BY Age) 
         OVER () AS Q3_Age,
    
-   -- The 5 number summary of monthly income of employees
+-- The 5 number summary of monthly income of employees
     MAX(Age) OVER () AS Max_Age
 FROM [IBM Employee Attrition Analysis];
 
@@ -133,7 +133,7 @@ SELECT
 FROM [IBM Employee Attrition Analysis]
 GROUP BY Gender;
 
---Interpretation: Attrition rate of male employees is only slightly higher.
+--Insight: Attrition rate of male employees is only slightly higher.
 
 -- Attrition rate by department
 SELECT 
@@ -151,7 +151,7 @@ FROM [IBM Employee Attrition Analysis]
 GROUP BY Department
 ORDER BY AttritionRate DESC;
 
--- Insight: Sales and Human Resources department has higher attrition rate
+-- Insight: Sales has the highest attrition rate, followed by HR.
 
 -- Attrition rate by age group
 SELECT 
@@ -251,7 +251,7 @@ FROM [IBM Employee Attrition Analysis]
 GROUP BY StockOptionLevel
 ORDER BY AttritionRate DESC;
 
---Interpretation: It's the employees with 0 stock otion level that left the most
+--Insight: It's the employees with 0 stock otion level that left the most
 
 -- Attrition rate by salary hike percentage
 SELECT 
@@ -284,7 +284,7 @@ GROUP BY
      END
 ORDER BY AttritionRate DESC;
 
---Interpretation: similar trend
+-- Insight: No clear pattern exists.
 
 -- Attrition rate vary by overtime
 SELECT 
@@ -352,7 +352,7 @@ FROM [IBM Employee Attrition Analysis]
 GROUP BY JobSatisfaction
 ORDER BY AttritionRate DESC;
 
---Interpretation: Attrition rate increases as job satisfaction decreases
+--Insight: Attrition rate increases as job satisfaction decreases
 
 -- Department which has greater percentage of less satsfied employees
 SELECT
@@ -420,7 +420,7 @@ FROM [IBM Employee Attrition Analysis]
 GROUP BY WorkLifeBalance
 ORDER BY AttritionRate DESC;
 
---Interpretation: Employees who rated work-life balance as 1 left the most. Strangely, the category that follows is of the ones who rated work-life balance as 4.
+--Insight: Employees who rated work-life balance as 1 left the most. Strangely, the category that follows is of the ones who rated work-life balance as 4.
 
 -- Attrition rate by relationship satsfaction
 SELECT 
@@ -438,7 +438,7 @@ FROM [IBM Employee Attrition Analysis]
 GROUP BY RelationshipSatisfaction
 ORDER BY AttritionRate DESC;
 
---Interpretation: Employees least satisfied with relationships within organization left the most
+--Insight: Employees least satisfied with relationships within organization left the most
 
 -- Attrition rate by environment satisfaction
 SELECT 
@@ -456,7 +456,7 @@ FROM [IBM Employee Attrition Analysis]
 GROUP BY EnvironmentSatisfaction
 ORDER BY AttritionRate DESC;
 
---Interpretation: Attrition rate increases as environment satisfaction decreases
+--Insight: Attrition rate increases as environment satisfaction decreases
 
 -- Attrition rate by job level
 SELECT 
@@ -474,7 +474,7 @@ FROM [IBM Employee Attrition Analysis]
 GROUP BY JobLevel
 ORDER BY AttritionRate DESC;
 
---Interpretation: Attrition rate increases as job level decreases, employees at higher job level tend to be more stable
+--Insight: Attrition rate increases as job level decreases, employees at higher job level tend to be more stable
 
 -- Attrition rate by job involvement
 SELECT 
@@ -492,7 +492,7 @@ FROM [IBM Employee Attrition Analysis]
 GROUP BY JobInvolvement
 ORDER BY AttritionRate DESC;
 
---Interpretation: Attrition rate increases as job involvement decreases
+--Insight: Attrition rate increases as job involvement decreases
 
 -- Attrition rate by number of trainings last year
 SELECT 
@@ -510,7 +510,7 @@ FROM [IBM Employee Attrition Analysis]
 GROUP BY TrainingTimesLastYear
 ORDER BY AttritionRate DESC;
 
---Interpretation: Employees with 0 and 4 times (maximun) training left the most
+--Insight: Employees with 0 and 4 times (maximun) training left the most
 
 -- Attrition rate by years with current manager
 SELECT 
@@ -528,8 +528,6 @@ FROM [IBM Employee Attrition Analysis]
 GROUP BY YearsWithCurrManager
 ORDER BY AttritionRate DESC;
 
---Interpretation:
-
 -- Attrition by years at the company
 SELECT 
     YearsAtCompany, 
@@ -546,7 +544,7 @@ FROM [IBM Employee Attrition Analysis]
 GROUP BY YearsAtCompany
 ORDER BY AttritionRate DESC;
 
---Interpretation: No consistent pattern is seen
+--Insight: No consistent pattern is seen
 
 -- Attrition rate by total working years
 SELECT 
@@ -574,7 +572,7 @@ CASE
 END
 ORDER BY AttritionRate DESC;
 
---Interpretation: Employees with total working years between 0 and 10 is seen to have higher attrition rate than others. These are employees still in there early career phase.
+--Insight: Employees with total working years between 0 and 10 is seen to have higher attrition rate than others. These are employees still in there early career phase.
 
 -- Income of employees working overtime vs of employees not working overtime
 SELECT 
