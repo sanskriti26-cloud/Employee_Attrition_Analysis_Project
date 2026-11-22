@@ -246,7 +246,7 @@ SELECT
     SUM(CASE 
             WHEN Attrition = 1 THEN 1 
             ELSE 0 
-        END) * 100/COUNT(*) as AttritionRate
+        END) * 100.0/COUNT(*) as AttritionRate
 FROM [IBM Employee Attrition Analysis]
 GROUP BY StockOptionLevel
 ORDER BY AttritionRate DESC;
