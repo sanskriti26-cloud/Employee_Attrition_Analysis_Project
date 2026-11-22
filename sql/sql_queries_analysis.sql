@@ -185,7 +185,7 @@ ORDER BY AttritionRate DESC;
 SELECT 
     CASE
      WHEN Age BETWEEN 18 AND 25 THEN '18-25'
-     ELSE '25+'
+     ELSE '26+'
      END AS AgeGroup,
     COUNT(*) AS TotalEmployees,
     SUM(CASE 
@@ -203,7 +203,7 @@ FROM [IBM Employee Attrition Analysis]
 GROUP BY 
     CASE
      WHEN Age BETWEEN 18 AND 25 THEN '18-25'
-     ELSE '25+'
+     ELSE '26+'
      END;
 
 -- Insight: Attrition rate among employees in the age group 18-25 is about 2.5 times higher than that in employee above 25 years of age. attrition rate
