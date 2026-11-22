@@ -129,7 +129,7 @@ SELECT
     Gender, 
     COUNT(*) as TotalEmployees, 
     SUM(CASE WHEN Attrition = 1 THEN 1 ELSE 0 END) AS EmployeesLeft,
-    100 * SUM(CASE WHEN Attrition = 1 THEN 1 ELSE 0 END)/COUNT(*) as AttritionRate
+    100.0 * SUM(CASE WHEN Attrition = 1 THEN 1 ELSE 0 END)/COUNT(*) as AttritionRate
 FROM [IBM Employee Attrition Analysis]
 GROUP BY Gender;
 
@@ -350,7 +350,7 @@ SELECT
             WHEN Attrition = 1 THEN 1 
             ELSE 0 
         END) AS EmployeesLeft,
-    100 * SUM(CASE 
+    100.0 * SUM(CASE 
                   WHEN Attrition = 1 THEN 1 
                   ELSE 0 
               END)/COUNT(*) as AttritionRate
@@ -418,10 +418,10 @@ SELECT
             WHEN Attrition = 1 THEN 1 
             ELSE 0 
         END) AS EmployeesLeft,
-    SUM(CASE
+    100.0 * SUM(CASE
             WHEN Attrition = 1 THEN 1 
             ELSE 0 
-        END)*100/COUNT(*) AS AttritionRate
+        END)/COUNT(*) AS AttritionRate
 FROM [IBM Employee Attrition Analysis]
 GROUP BY WorkLifeBalance
 ORDER BY AttritionRate DESC;
