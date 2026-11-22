@@ -361,21 +361,54 @@ ORDER BY AttritionRate DESC;
 --Interpretation: Attrition rate increases as job satisfaction decreases
 
 -- Department which has greater percentage of less satsfied employees
-SELECT 
+SELECT
     Department,
-    100.0 * SUM(CASE 
-                    WHEN JobSatisfaction BETWEEN 0 AND 2 THEN 1 
-                    ELSE 0 
-                END) / COUNT(*) AS OverallEmployee,
-    100.0 * SUM(CASE 
-                    WHEN JobSatisfaction BETWEEN 0 AND 2 AND Attrition = 1 THEN 1 
-                    ELSE 0 
-                END)/COUNT(CASE WHEN Attrition = 1 THEN 1 ELSE 0 END) AS AttritionEmployee
-FROM [IBM Employee Attrition Analysis]
-GROUP BY Department
-ORDER BY AttritionEmployee DESC
+    COUNT(*) AS TotalEmployees,
 
--- Insight: Job satisfaction is lowest in HR department, which correlates with high attrition in the department
+    100.0 * SUM(CASE
+                    WHEN JobSatisfaction <= 2 AND Attrition = 1 THEN 1
+                    ELSE 0
+                 END)
+    / SUM(CASE
+            WHEN JobSatisfaction <= 2 THEN 1
+            ELSE 0
+          END) AS AttritionRate_LowSatisfactionEmployees,
+
+    100.0 * SUM(CASE
+                    WHEN JobSatisfaction >= 3 AND Attrition = 1 THEN 1
+                    ELSE 0
+                 END)
+    / SUM(CASE
+            WHEN JobSatisfaction >= 3 THEN 1
+            ELSE 0
+          END) AS AttritionRate_HighSatisfactionEmployees,
+
+    (
+        100.0 * SUM(CASE
+                        WHEN JobSatisfaction <= 2 AND Attrition = 1 THEN 1
+                        ELSE 0
+                     END)
+        / SUM(CASE
+                WHEN JobSatisfaction <= 2 THEN 1
+                ELSE 0
+             END)
+    )
+    -
+    (
+        100.0 * SUM(CASE
+                        WHEN JobSatisfaction >= 3 AND Attrition = 1 THEN 1
+                        ELSE 0
+                     END)
+        / SUM(CASE
+                WHEN JobSatisfaction >= 3 THEN 1
+                ELSE 0
+             END)
+    ) AS AttritionRateDifference_PP
+
+FROM [IBM Employee Attrition Analysis]
+GROUP BY Department;
+
+-- Insight: Job satisfaction is lowest in sales department.
 
 -- Attrition rate by work-life balance
 SELECT 
