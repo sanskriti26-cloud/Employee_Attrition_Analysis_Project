@@ -211,13 +211,10 @@ GROUP BY
 -- Attrition rate by income?
 SELECT 
     CASE
-        WHEN MonthlyIncome BETWEEN 
-    1000 AND 3000 THEN 'Low'
-        WHEN MonthlyIncome BETWEEN 
-    3001 AND 5000 THEN 'Medium'
-        WHEN MonthlyIncome >= 5001 
-        THEN 'High'
-    END AS MonthlyIncomeRange,
+    WHEN MonthlyIncome <= 3000 THEN 'Low'
+    WHEN MonthlyIncome <= 5000 THEN 'Medium'
+    ELSE 'High'
+END AS MonthlyIncomeRange,
     COUNT(*) AS TotalEmployees,
     SUM(CASE 
             WHEN Attrition = 1 THEN 1 
@@ -230,13 +227,10 @@ SELECT
 FROM [IBM Employee Attrition Analysis]
 GROUP BY 
  CASE
-        WHEN MonthlyIncome BETWEEN 
-    1000 AND 3000 THEN 'Low'
-        WHEN MonthlyIncome BETWEEN 
-    3001 AND 5000 THEN 'Medium'
-        WHEN MonthlyIncome >= 5001 
-        THEN 'High'
-    END
+    WHEN MonthlyIncome <= 3000 THEN 'Low'
+    WHEN MonthlyIncome <= 5000 THEN 'Medium'
+    ELSE 'High'
+END
     ORDER BY AttritionRate DESC;
 
 -- Insight: Attrition rate in employees under low income slab is significantly higher.
