@@ -89,7 +89,7 @@ SELECT
     JobRole,
     COUNT(*) AS EmployeeCount
 FROM [IBM Employee Attrition Analysis]
-Group By Department, JobRole
+Group BY Department, JobRole
 ORDER BY Department, JobRole;
 
 -- Business travel frequency proportion
@@ -98,7 +98,7 @@ SELECT
     COUNT(*) AS EmployeeCount,
     COUNT(*)*100.0/(SELECT COUNT(*) FROM [IBM Employee Attrition Analysis]) AS EmployeePercent
 FROM [IBM Employee Attrition Analysis]
-Group By BusinessTravel
+Group BY BusinessTravel
 ORDER BY EmployeePercent DESC;
 
 -- ===================================================================================================
@@ -120,7 +120,7 @@ SELECT
     AVG(MonthlyIncome) AS AverageMonthlyIncome, 
     COUNT(*) AS EmployeeCount
 FROM [IBM Employee Attrition Analysis]
-Group By Department, JobRole
+Group BY Department, JobRole
 ORDER BY Department, JobRole;
 -- Insight: Income of job roles in sales is lower
 
@@ -251,7 +251,7 @@ FROM [IBM Employee Attrition Analysis]
 GROUP BY StockOptionLevel
 ORDER BY AttritionRate DESC;
 
---Insight: It's the employees with 0 stock otion level that left the most
+--Insight: Employees with StockOptionLevel 0 have the highest attrition rate.
 
 -- Attrition rate by salary hike percentage
 SELECT 
@@ -284,7 +284,7 @@ GROUP BY
      END
 ORDER BY AttritionRate DESC;
 
--- Insight: No clear pattern exists.
+-- Insight: No clear pattern is observed.
 
 -- Attrition rate vary by overtime
 SELECT 
@@ -425,7 +425,7 @@ ORDER BY AttritionRate DESC;
 -- Attrition rate by relationship satsfaction
 SELECT 
     RelationshipSatisfaction, 
-    COUNT(*) as TotalEmployees,
+    COUNT(*) AS TotalEmployees,
     SUM(CASE
             WHEN Attrition = 1 THEN 1 
             ELSE 0 
@@ -433,7 +433,7 @@ SELECT
     SUM(CASE 
             WHEN Attrition = 1 THEN 1 
             ELSE 0 
-        END) * 100.0/COUNT(*) as AttritionRate
+        END) * 100.0/COUNT(*) AS AttritionRate
 FROM [IBM Employee Attrition Analysis]
 GROUP BY RelationshipSatisfaction
 ORDER BY AttritionRate DESC;
@@ -443,7 +443,7 @@ ORDER BY AttritionRate DESC;
 -- Attrition rate by environment satisfaction
 SELECT 
     EnvironmentSatisfaction, 
-    COUNT(*) as TotalEmployees,
+    COUNT(*) AS TotalEmployees,
     SUM(CASE
             WHEN Attrition = 1 THEN 1 
             ELSE 0 
@@ -451,7 +451,7 @@ SELECT
     SUM(CASE
             WHEN Attrition = 1 THEN 1 
             ELSE 0 
-        END) * 100.0/COUNT(*) as AttritionRate
+        END) * 100.0/COUNT(*) AS AttritionRate
 FROM [IBM Employee Attrition Analysis]
 GROUP BY EnvironmentSatisfaction
 ORDER BY AttritionRate DESC;
@@ -461,7 +461,7 @@ ORDER BY AttritionRate DESC;
 -- Attrition rate by job level
 SELECT 
     JobLevel, 
-    COUNT(*) as TotalEmployees,
+    COUNT(*) AS TotalEmployees,
     SUM(CASE
             WHEN Attrition = 1 THEN 1 
             ELSE 0 
@@ -469,7 +469,7 @@ SELECT
     SUM(CASE 
             WHEN Attrition = 1 THEN 1 
             ELSE 0 
-        END) * 100.0/COUNT(*) as AttritionRate
+        END) * 100.0/COUNT(*) AS AttritionRate
 FROM [IBM Employee Attrition Analysis]
 GROUP BY JobLevel
 ORDER BY AttritionRate DESC;
@@ -479,7 +479,7 @@ ORDER BY AttritionRate DESC;
 -- Attrition rate by job involvement
 SELECT 
     JobInvolvement, 
-    COUNT(*) as TotalEmployees, 
+    COUNT(*) AS TotalEmployees, 
     SUM(CASE
             WHEN Attrition = 1 THEN 1 
             ELSE 0 
@@ -487,7 +487,7 @@ SELECT
     SUM(CASE 
             WHEN Attrition = 1 THEN 1 
             ELSE 0 
-        END) * 100.0/COUNT(*) as AttritionRate
+        END) * 100.0/COUNT(*) AS AttritionRate
 FROM [IBM Employee Attrition Analysis]
 GROUP BY JobInvolvement
 ORDER BY AttritionRate DESC;
@@ -497,7 +497,7 @@ ORDER BY AttritionRate DESC;
 -- Attrition rate by number of trainings last year
 SELECT 
     TrainingTimesLastYear, 
-    COUNT(*) as TotalEmployees, 
+    COUNT(*) AS TotalEmployees, 
     SUM(CASE
             WHEN Attrition = 1 THEN 1 
             ELSE 0 
@@ -505,17 +505,17 @@ SELECT
     SUM(CASE
             WHEN Attrition = 1 THEN 1 
             ELSE 0 
-        END) * 100.0/COUNT(*) as AttritionRate
+        END) * 100.0/COUNT(*) AS AttritionRate
 FROM [IBM Employee Attrition Analysis]
 GROUP BY TrainingTimesLastYear
 ORDER BY AttritionRate DESC;
 
---Insight: Employees with 0 and 4 times (maximun) training left the most
+--Insight: Attrition rate is highest among employees who received no training and those who received four training sessions.
 
 -- Attrition rate by years with current manager
 SELECT 
     YearsWithCurrManager, 
-    COUNT(*) as TotalEmployees,
+    COUNT(*) AS TotalEmployees,
     SUM(CASE
             WHEN Attrition = 1 THEN 1 
             ELSE 0 
@@ -523,7 +523,7 @@ SELECT
     SUM(CASE 
             WHEN Attrition = 1 THEN 1 
             ELSE 0 
-        END) * 100.0/COUNT(*) as AttritionRate
+        END) * 100.0/COUNT(*) AS AttritionRate
 FROM [IBM Employee Attrition Analysis]
 GROUP BY YearsWithCurrManager
 ORDER BY AttritionRate DESC;
@@ -531,7 +531,7 @@ ORDER BY AttritionRate DESC;
 -- Attrition by years at the company
 SELECT 
     YearsAtCompany, 
-    COUNT(*) as TotalEmployees,
+    COUNT(*) AS TotalEmployees,
     SUM(CASE
             WHEN Attrition = 1 THEN 1
             ELSE 0 
@@ -539,12 +539,12 @@ SELECT
     SUM(CASE 
             WHEN Attrition = 1 THEN 1 
             ELSE 0 
-        END) * 100.0/COUNT(*) as AttritionRate
+        END) * 100.0/COUNT(*) AS AttritionRate
 FROM [IBM Employee Attrition Analysis]
 GROUP BY YearsAtCompany
 ORDER BY AttritionRate DESC;
 
---Insight: No consistent pattern is seen
+--Insight: No consistent pattern is observed
 
 -- Attrition rate by total working years
 SELECT 
