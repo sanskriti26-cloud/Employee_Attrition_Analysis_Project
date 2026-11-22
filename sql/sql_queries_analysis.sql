@@ -95,7 +95,7 @@ ORDER BY Department, JobRole;
 -- Business travel frequency proportion
 SELECT 
     BusinessTravel, 
-    COUNT(BusinessTravel) AS EmployeeCount,
+    COUNT(*) AS EmployeeCount,
     COUNT(*)*100.0/(SELECT COUNT(*) FROM [IBM Employee Attrition Analysis]) AS EmployeePercent
 FROM [IBM Employee Attrition Analysis]
 Group By BusinessTravel
