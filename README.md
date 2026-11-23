@@ -3,13 +3,6 @@
 This project analyzes employee attrition using HR data to identify key factors driving employee turnover. 
 Using exploratory data analysis and visualization, the project uncovers patterns related to salary, overtime, job roles, and work-life balance, and provides actionable HR recommendations.
 
-## Project Structure
-├── data (Original dataset)  
-├── sql (SQL queries for data analysis)  
-├── dashboard (Dashboard summarizing key findings)  
-├── Report (Project report)
- 
-
 ## Problem Statement
 The organization wants to find out why their attrition rates are high for this specific time period, and what the HR team can do to reduce it.
 
